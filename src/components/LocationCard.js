@@ -28,7 +28,4 @@ const LocationCard = props => {
   )
 }
 
-export default LocationCard;
-
-//export default function LocationCard({ name, type, dimension, residents }) {
- 
+export default LocationCard; 

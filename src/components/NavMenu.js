@@ -5,8 +5,6 @@ import "../index.css";
 import CharacterList from "./CharacterList";
 import LocationList from "./LocationsList";
 import WelcomePage from "./WelcomePage";
-// import TabNav from "./TabNav";
-// import WelcomePage from "./WelcomePage";
 
 const Nav = styled.nav`
     position: relative;

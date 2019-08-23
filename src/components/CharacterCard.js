@@ -22,8 +22,6 @@ const CharacterCard = props => {
         <h2>{props.result.name}</h2>
         <p>{props.result.status}: {props.result.species}</p>
         <p>{props.result.location.name}</p>
-        {/* <p>{props.result.location}</p> */}
-        {/* <p>{props.result.origin}</p> */}
       </GridItem>
     </GridContainer>
   )
