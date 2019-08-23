@@ -1,5 +1,33 @@
 import React from "react";
+import styled from "styled-components";
 
-export default function LocationCard({ name, type, dimension, residents }) {
-  return <span>todo: location</span>;
+let GridContainer = styled.div`
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: transparent;
+    padding: 10px;
+`
+
+let GridItem = styled.div`
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+`
+
+const LocationCard = props => {
+  return (
+    <GridContainer>
+      <GridItem>
+        <h2>{props.result.name}</h2>
+        <p>{props.result.type}</p>
+        <p>{props.result.dimension}</p>
+        <p>Residents: {props.result.residents.length}</p>
+      </GridItem>
+    </GridContainer>
+  )
 }
+
+export default LocationCard;
+
+//export default function LocationCard({ name, type, dimension, residents }) {
+ 
