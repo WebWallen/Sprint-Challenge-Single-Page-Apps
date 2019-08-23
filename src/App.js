@@ -9,9 +9,9 @@ export default function App() {
   return (
     <main>
       <Header />
-      <CharacterList />
-      <LocationList />
-      {/* <TabNav /> */}
+      {/* <CharacterList /> */}
+      {/* <LocationList /> */}
+      <TabNav />
     </main>
   );
 }
