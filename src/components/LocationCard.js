@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 let GridContainer = styled.div`
     display: inline-grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     background-color: transparent;
     padding: 10px;
+    width: 500px;
 `
 
 let GridItem = styled.div`
