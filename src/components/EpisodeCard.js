@@ -13,18 +13,21 @@ let GridItem = styled.div`
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
+  text-align: center;
 `
 
-const LocationCard = props => {
+const EpisodeCard = props => {
   return (
+    <div className="episode-card">
     <GridContainer>
       <GridItem>
-        <h2>{props.result.name}</h2>
-        <p>{props.result.type}</p>
-        <p>{props.result.dimension}</p>
+        <strong><h2>{props.result.name}</h2></strong>
+        <strong>Air Date:</strong> <p>{props.result.air_date}</p>
+        <strong>Episode Number:</strong> <p>{props.result.episode}</p>
       </GridItem>
     </GridContainer>
+    </div>
   )
 }
 
-export default LocationCard; 
+export default EpisodeCard;
